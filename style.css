@@ -1,0 +1,219 @@
+:root {
+    --primary: #5DA9E9;
+    --bgDark: rgb(0, 45, 107);
+    --white: rgb(250, 250, 250);
+    --secondary: rgb(0, 59, 50);
+    --bgLight: rgb(27, 81, 186);
+    --pink: rgb(226, 63, 91);
+    --footerBg: rgb(32,39,56);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bgLight);
+    padding: 0.5rem;
+}
+
+nav a {
+    text-decoration:  None;
+    color: var(--white);
+    margin: 0.5rem;
+}
+nav a:hover{
+    color: var(--secondary);
+}
+nav .center{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.left img {
+    width: 150px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.right img {
+    width: 30px;
+    height: 30px;
+}
+
+.right button {
+    height: 30px;
+    border: 1px solid var(--white);
+    background-color: transparent;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0.5rem;
+    color: var(--white);
+    border-radius: 5px;
+}
+
+section .banner {
+    position: relative;
+    background-color: var(--bgDark);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.banner>img {
+    padding: 2rem;
+}
+
+.banner .typo {
+    color: var(--white);
+    margin-left: -15rem;
+    margin-top: -10rem;
+}
+
+.banner .typo h1 {
+    font-weight: 200;
+    font-size: 1.75rem;
+}
+
+.banner .typo p{
+    line-height: 2;
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+.bottom {
+    position: absolute;
+    height: 40px;
+    width: 100vw;
+    background-color:var(--bgLight);
+    bottom: 0rem;
+}
+.banner .ads {
+    position: absolute;
+    display: flex;
+    background-color: var(--white);
+    border-radius: 1rem;
+    width: 45rem;
+    height: 3rem;
+    justify-content: space-evenly;
+    left: 10rem;
+    bottom:1rem;
+}
+.banner .ads div{
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+}
+.banner .ads div img{
+    margin: 1rem;
+}
+
+.form {
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 2rem;
+    bottom: 1rem;
+    right: 2rem;
+    width: 30rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5;
+
+}
+
+.form h1 {
+    font-weight: 200;
+    font-size: 2rem;
+}
+.form h1 span, .form p span{
+    color: var(--pink);
+    line-height: 1rem;
+}
+.form .radio {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0.5rem;
+}
+.form .top {
+    margin-top: 0.5rem;
+}
+
+.form>label input{
+    width: 75%;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    outline: none;
+}
+
+.form .option select {
+    padding: 0.5rem;
+    outline: none;
+    margin: .25rem;
+}
+.form .option label input {
+    width: 45%;
+    padding: 0.5rem;
+    outline: none;
+    margin:0.25rem
+}
+
+.form .submit{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem ;
+}
+
+.form .submit button {
+    background-color: var(--pink);
+    color: var(--white);
+    margin: 0.25rem;
+    padding: 0.5rem 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.form .submit img{
+    margin: 0 0.75rem;
+}
+
+.form .submit span {
+    color: var(--pink);
+    font-size: 0.75rem;
+}
+
+.form .text p{
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+.form .text span{
+    font-size: 0.75rem;
+}
+
+.form .text a{
+    color: var(--pink);
+}
