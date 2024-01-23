@@ -6,46 +6,46 @@
     --bgLight: rgb(27, 81, 186);
     --pink: rgb(226, 63, 91);
     --footerBg: rgb(32,39,56);
+    --violet:rgb(48,44,118);
+    --brown:rgb(178,116,0);
+    --footerText:rgb(141,177,203);
 }
-* {
+
+*{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
 }
 
-
-nav {
+nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: var(--bgLight);
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
-nav a {
-    text-decoration:  None;
+nav a{
+    text-decoration: none;
     color: var(--white);
-    margin: 0.5rem;
+    margin: 0 0.5rem;
+    text-align: center;
 }
-nav a:hover{
-    color: var(--secondary);
-}
+
 nav .center{
     display: flex;
     justify-content: space-between;
 }
-
-.left {
+.left{
     width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-.left img {
-    width: 150px;
+.left img{
+    width: 100px;
 }
 
 .right {
@@ -54,24 +54,20 @@ nav .center{
     justify-content: center;
     width: 20%;
 }
-
 .right img {
     width: 30px;
     height: 30px;
 }
-
-.right button {
+.right button{
     height: 30px;
     border: 1px solid var(--white);
-    background-color: transparent;
-    padding: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: 0.5rem;
+    background-color: var(--bgLight);
     color: var(--white);
-    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 10%;
+    text-align: center;
 }
-
 section .banner {
     position: relative;
     background-color: var(--bgDark);
@@ -79,141 +75,239 @@ section .banner {
     align-items: center;
     justify-content: left;
 }
-
-.banner>img {
+.banner>img{
     padding: 2rem;
+    margin-left: 10rem;
 }
-
-.banner .typo {
+.banner .typo{
     color: var(--white);
-    margin-left: -15rem;
-    margin-top: -10rem;
+    margin-top: -8rem;
+    margin-left: -4rem;
 }
-
-.banner .typo h1 {
-    font-weight: 200;
+.banner .typo h1{
+    font-weight: 400;
     font-size: 1.75rem;
 }
-
 .banner .typo p{
     line-height: 2;
-    font-size: 1.25rem;
-    font-weight: 100;
+    font-weight: 200;
+    font-size: 1.5rem;
 }
-
 .bottom {
     position: absolute;
-    height: 40px;
+    height: 3rem;
     width: 100vw;
-    background-color:var(--bgLight);
-    bottom: 0rem;
+    background-color: var(--pink);  
+    bottom: 0rem; 
 }
 .banner .ads {
     position: absolute;
+    bottom: 1rem;
     display: flex;
     background-color: var(--white);
+    height: 3.5rem;
     border-radius: 1rem;
-    width: 45rem;
-    height: 3rem;
+    width: 50rem;
+    left: 5rem;
+    align-items: center;
     justify-content: space-evenly;
-    left: 10rem;
-    bottom:1rem;
+    margin-left: 8rem;
 }
-.banner .ads div{
+
+.banner .ads div {
     display: flex;
     align-items: center;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+    justify-content: space-evenly;
 }
+
 .banner .ads div img{
     margin: 1rem;
 }
-
 .form {
-    position: absolute;
     background-color: var(--white);
-    border-radius: 2rem;
-    bottom: 1rem;
-    right: 2rem;
-    width: 30rem;
-    padding: 2rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 10rem;
+    height: 25rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    line-height: 1.5;
-
+    flex-direction: column;
+    line-height: 1rem;
 }
-
 .form h1 {
-    font-weight: 200;
+    font-weight: 500;
     font-size: 2rem;
 }
 .form h1 span, .form p span{
     color: var(--pink);
-    line-height: 1rem;
 }
 .form .radio {
     display: flex;
     justify-content: space-evenly;
-    margin: 0.5rem;
 }
-.form .top {
-    margin-top: 0.5rem;
-}
-
 .form>label input{
-    width: 75%;
+    width: 100%;
     padding: 0.5rem;
+    border-radius: 0.25rem;
+    outline-color: magenta;
+}
+.form .option select{
+    width: 20%;
+    padding: 0.5rem;
+    outline-color: magenta;
+    border-radius: 0.25rem;
+}
+.form .option label input{
+    width: 50%;
+    padding: 0.5rem;
+    outline-color: magenta;
+    border-radius: 0.25rem;
     margin: 0.25rem;
-    outline: none;
 }
-
-.form .option select {
-    padding: 0.5rem;
+.form .submit button{
+    padding: 0.5rem 1rem;
+    background-color: var(--pink);
     outline: none;
-    margin: .25rem;
+    border-radius: 0.25rem;
+    margin: 0.25rem;
+    color: var(--white);
 }
-.form .option label input {
-    width: 45%;
-    padding: 0.5rem;
-    outline: none;
-    margin:0.25rem
+.form .submit image{
+    margin: 0 0.5rem;
 }
-
-.form .submit{
+.form .text{
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+.courses {
+    background-color: var(--white);
+}
+.courses>p{
+    font-weight: 200;
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+.courses .container{
     display: flex;
     align-items: center;
-    margin: 0.5rem ;
+    justify-content: space-evenly;
 }
-
-.form .submit button {
-    background-color: var(--pink);
-    color: var(--white);
-    margin: 0.25rem;
-    padding: 0.5rem 1.5rem;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-
+.courses .course-container{
+    margin: 2rem;
+    background-color: white;
+    height: 35rem;
+    width: 25rem;
 }
-
-.form .submit img{
-    margin: 0 0.75rem;
-}
-
-.form .submit span {
-    color: var(--pink);
-    font-size: 0.75rem;
-}
-
-.form .text p{
-    font-size: 1.25rem;
+.course-heading{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15%;
+    color: white;
     font-weight: 100;
 }
-
-.form .text span{
-    font-size: 0.75rem;
+.course-heading img{
+    height: 40px;
+    width: 40px;
+}
+.sd{
+    background-color: var(--bgLight);
+}
+.ml{
+    background-color: var(--violet)
+}
+.ms{
+    background-color: var(--brown);
+}
+.course-detail{
+    padding: 2rem;
+    height: 65%;
+    overflow: auto;
+}
+.course-detail .yoe p{
+    margin-left: 1rem;
+    color: grey;
+}
+.course-detail .yoe {
+    display: flex;
+    align-items: center;
+}
+.course-detail h4{
+    margin-top: 1rem;
+    font-weight: 200;
+    line-height: 1.5;
+}
+.course-detail p{
+    color:grey;
+}
+.course-bottom div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+.course-bottom>img{
+    margin: 0 2rem;
+}
+.course-bottom>span{
+    font-size: 1rem;
+    color: grey;
+    line-height: 2rem;
+}
+.course-bottom a{
+    font-size: 1.5rem;
+    color: var(--bgLight);
+    text-decoration: none;
+}
+footer{
+    background-color: var(--footerBg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem;
+}
+footer h4{
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2.5;   
 }
 
-.form .text a{
-    color: var(--pink);
+footer p {
+    color: var(--white);
+}
+footer a{
+    color: var(--footerText);
+    text-decoration: none;
+    line-height: 1.25;
+}
+footer>div{
+    display: flex;
+    flex-direction: column;
+}
+footer .first .logo {
+    width: 120px;
+    height: 75px;
+}
+footer .first .interviewbit {
+    width: 170px;
+    height: 30px;
+    margin: 1rem 0;
+}
+
+footer .first div div {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+footer .first div> img{
+    width: 120px;
+    margin: 1rem 0;
 }
