@@ -77,27 +77,26 @@ section .banner {
 }
 .banner>img{
     padding: 2rem;
-    margin-left: 10rem;
 }
 .banner .typo{
     color: var(--white);
     margin-top: -8rem;
-    margin-left: -4rem;
+    margin-left: -12rem;
 }
 .banner .typo h1{
     font-weight: 400;
     font-size: 1.75rem;
 }
 .banner .typo p{
-    line-height: 2;
+    line-height: 1.5;
     font-weight: 200;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .bottom {
     position: absolute;
     height: 3rem;
     width: 100vw;
-    background-color: var(--pink);  
+    background-color: var(--bgLight);  
     bottom: 0rem; 
 }
 .banner .ads {
@@ -105,13 +104,12 @@ section .banner {
     bottom: 1rem;
     display: flex;
     background-color: var(--white);
-    height: 3.5rem;
+    height: 3rem;
     border-radius: 1rem;
     width: 50rem;
-    left: 5rem;
     align-items: center;
     justify-content: space-evenly;
-    margin-left: 8rem;
+    margin-left: 4rem;
 }
 
 .banner .ads div {
@@ -127,15 +125,15 @@ section .banner {
 .form {
     background-color: var(--white);
     position: absolute;
-    bottom: 2rem;
-    right: 10rem;
-    height: 25rem;
-    border-radius: 1rem;
+    bottom: 1rem;
+    right: 2rem;
+    height: 28rem;
+    width: 30rem;
+    border-radius: 2rem;
     padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    line-height: 1rem;
 }
 .form h1 {
     font-weight: 500;
